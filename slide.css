@@ -1,0 +1,79 @@
+.container{
+	margin:50px auto;
+	position: relative;
+}
+.container>div{
+	overflow: hidden;
+	box-sizing: content-box;
+	position: relative;
+}
+.container>div>ul{
+	position: relative;
+	left: 0px;
+	transition: all 1s ease;
+	-ms-transition:all 1s ease;
+	margin: 0;
+	padding: 0;
+}
+.container>div>ul>li{
+	list-style-type: none;
+	display: inline-block;
+	float: left;
+}
+.container>:hover .prev{
+	display: block;
+}
+.container>:hover .next{
+	display: block;
+}
+.prev{
+	width:58px;
+	height: 46px;
+	background:url(prev.png) no-repeat;
+	position: absolute;
+	left: 30px;
+	cursor: pointer;
+	display: none;
+	border: 1px solid red;
+}
+.next{
+	width: 58px;
+	height: 46px;
+	background:url(next.png) no-repeat;
+	position: absolute;
+	right: 30px;
+	cursor: pointer;
+	display: none;
+	border: 1px solid red;
+}
+img{
+	vertical-align: bottom;
+	border: none;
+}
+a{
+	border: 0px;
+}
+.circles>ol>li{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background-color: rgba(173,150,140,0.36);
+	border-radius: 50%;
+	line-height: 20px;
+	text-align: center;
+	cursor:pointer;
+}
+.circles ol li.active{
+	background-color: rgba(107,171,51,1);
+}
+.data{
+  position: absolute;
+  bottom: 0px;
+  height:20px;
+  line-height:20px;
+  width: 100%;
+  margin: 0;
+  color:#fff;
+  background-color: rgba(51,51,51,0.2);
+  text-indent:5px;
+}

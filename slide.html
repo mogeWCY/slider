@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN-hans">
+<head>
+	<meta charset="UTF-8">
+	<title>slider</title>
+</head>
+<body>
+  <div id="con" class="container">
+	    <div>
+		    <ul>
+			   <li><a href="" title=""><img src="http://1.imoge.sinaapp.com/c.png" alt=""></a></li>
+			   <li><a href="" title=""><img src="http://1.imoge.sinaapp.com/b.png" alt=""></a></li>
+			   <li><a href="" title=""><img src="http://1.imoge.sinaapp.com/a.jpg" alt=""></a></li>
+		   </ul>
+		   <div class="prev"></div>
+		   <div class="next"></div>
+		 </div>
+		<div class="circles">
+		  <ol>
+			 <li data-index='0' class="active">1</li>
+			 <li data-index='1'>2</li>
+			 <li data-index='2'>3</li>
+		  </ol>
+		</div>
+  </div>
+</body>
+<script src='slide.js'></script>
+<script type="text/javascript">
+ var s=new Slider('con',{
+     id:'con',
+     imgWidth:300,
+     imgHeight:200,
+     events:['mouseover','click'],
+     datas:['hello','thank','ajljsjdlf'],
+     autoPlay:true,
+     playTime:2000
+ });
+</script>
+</html>
