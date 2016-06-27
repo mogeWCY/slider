@@ -1,4 +1,4 @@
- (function(window,document){
+﻿ (function(window,document){
    var DEFAULTS={
       imgWidth:300,
       imgHeight:300,
@@ -276,4 +276,6 @@
    	 }
    };
    window.Slider=Slider;
+/* test */
   })(window,document);
+/* test */
